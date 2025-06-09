@@ -1,6 +1,7 @@
-package TubesSupplier;
+package Tubes_PP_Kelompok8;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Node {
     private String id;
@@ -24,7 +25,15 @@ public class Node {
     public String getLokasi() { return lokasi; }
     public List<String> getBarangList() { return barangList; }
 
+    public void setId(String id) { this.id = id; }
+    public void setNama(String nama) { this.nama = nama; }
+    public void setTipe(String tipe) { this.tipe = tipe; }
+    public void setLokasi(String lokasi) { this.lokasi = lokasi; }
+
     public void tambahBarang(String barang) {
+        if (barang == null || barang.isEmpty()) {
+            throw new IllegalArgumentException("Nama barang tidak valid");
+        }
         barangList.add(barang);
     }
 
