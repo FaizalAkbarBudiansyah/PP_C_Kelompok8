@@ -26,11 +26,21 @@ public class Edge {
     }
 
     // Getter
-    public Node getSource() { return source; }
-    public Node getDestination() { return destination; }
-    public double getJarak() { return jarak; }
-    public double getBiayaKirim() { return biayaKirim; }
-    public double getWaktuKirim() { return waktuKirim; }
+    public Node getSource() {
+    	return source; 
+    	}
+    public Node getDestination() { 
+    	return destination; 
+    	}
+    public double getJarak() {
+    	return jarak; 
+    	}
+    public double getBiayaKirim() {
+    	return biayaKirim; 
+    	}
+    public double getWaktuKirim() { 
+    	return waktuKirim; 
+    	}
 
     @Override
     public String toString() {
